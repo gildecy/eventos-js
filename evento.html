@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos javascript</title>
+    <style>
+        div#area{
+            background-color: rgb(8, 8, 8);
+            color: antiquewhite;
+            width: 190px;
+            height: 190px;
+            line-height: 200px;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+   
+  
+<div id="area" onclick= "clicar()"onmouseenter="entrar()" onmouseout="sair ()">
+     deixe o mouse aqui
+</div>
+CLIQUE NO QUADRO ACIMA
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar(){
+            a.innerText = 'clicou'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'agora clique'
+            a.style.background = 'black'
+        }
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.background ='green'
+        }
+
+    </script>
+
+    
+</body>
+</html>
